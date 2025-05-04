@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/ashinee-kesanam/' : '/', // Adjust base path for Netlify
+  base: '/ashinee-kesanam/', // Set the base path
   server: {
     host: "::",
     port: 8080,
@@ -21,7 +21,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: 'dist', // Ensure output directory is Netlify-compatible
     target: 'esnext', // Ensure modern JavaScript output
     modulePreload: {
       polyfill: false, // Avoid unnecessary polyfills
