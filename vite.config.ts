@@ -20,10 +20,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    target: 'esnext', // Ensure modern JavaScript output
-    modulePreload: {
-      polyfill: false, // Avoid unnecessary polyfills
-    },
-  },
 }));
