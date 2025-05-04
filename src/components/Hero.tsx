@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Download, ArrowDown } from 'lucide-react';
 import { scrollToSection } from '@/utils/smoothScroll';
+import ashFormal from '@/assets/ash_formal.jpg'; // Import the image
 
 const Hero: React.FC = () => {
   return (
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 rounded-full bg-accent/10 animate-pulse"></div>
             <img 
-              src="https://via.placeholder.com/400x400.png?text=AK" 
+              src={ashFormal} 
               alt="Ashinee Kesanam" 
               className="rounded-full w-full h-full object-cover border-4 border-accent shadow-xl float-animation" 
             />
